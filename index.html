@@ -1,27 +1,330 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ntep Armel Jovial — Créations digitales</title>
-<meta name="description" content="Services créatifs 100% en ligne : reproductions artistiques, portraits, retouche photo, créations personnalisées et visuels digitaux.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Ntep Armel Jovial — Services numériques</title>
+
+<meta name="description" content="Services numériques, créations artistiques, retouche photo, montages et créations personnalisées.">
+
 <style>
-:root{--bg:#0b0b10;--card:#15151d;--txt:#f5f5f7;--muted:#aaaab8;--gold:#d9ad55;--line:#292934}*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,sans-serif;background:linear-gradient(180deg,#09090d,#111119);color:var(--txt);line-height:1.6}a{text-decoration:none;color:inherit}.wrap{max-width:1100px;margin:auto;padding:0 22px}.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}.brand{font-weight:800;letter-spacing:.5px}.brand span{color:var(--gold)}.nav a{color:var(--muted);margin-left:20px;font-size:14px}.hero{padding:85px 0 65px;text-align:center}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:700}.hero h1{font-size:clamp(40px,7vw,76px);line-height:1.02;margin:16px auto;max-width:900px}.hero p{max-width:680px;margin:0 auto 30px;color:var(--muted);font-size:18px}.btn{display:inline-block;padding:14px 22px;border-radius:12px;background:var(--gold);color:#17120a;font-weight:800;margin:5px}.btn.alt{background:transparent;color:var(--txt);border:1px solid var(--line)}section{padding:65px 0}h2{text-align:center;font-size:34px;margin:0 0 12px}.lead{text-align:center;color:var(--muted);max-width:650px;margin:0 auto 35px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:rgba(21,21,29,.9);border:1px solid var(--line);border-radius:18px;padding:25px}.card h3{margin:8px 0}.price{font-size:24px;font-weight:800;color:var(--gold)}.card p{color:var(--muted);font-size:14px}.tag{font-size:12px;color:var(--gold)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{border-top:2px solid var(--gold);padding-top:16px}.step b{font-size:28px}.step p{color:var(--muted);font-size:14px}.cta{background:linear-gradient(135deg,#1b1810,#14141c);border:1px solid #3a3120;border-radius:24px;padding:45px;text-align:center}.contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact .card{min-height:170px}footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:13px}.note{font-size:12px;color:#8e8e9a}@media(max-width:760px){.grid,.steps,.contact{grid-template-columns:1fr}.nav a{display:none}.hero{padding-top:55px}.cta{padding:30px 20px}}
-</style></head>
+:root{
+  --bg:#0b0b10;
+  --card:#15151d;
+  --text:#f5f5f7;
+  --muted:#a8a8b3;
+  --accent:#25d366;
+  --accent2:#7c5cff;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+.wrap{
+  max-width:1000px;
+  margin:auto;
+  padding:20px;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 0;
+}
+
+.brand{
+  font-size:20px;
+  font-weight:bold;
+}
+
+.hero{
+  padding:55px 0 35px;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:40px;
+  margin:10px 0;
+}
+
+.hero p{
+  color:var(--muted);
+  font-size:18px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 22px;
+  margin:10px 5px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.whatsapp{
+  background:var(--accent);
+  color:#000;
+}
+
+.secondary{
+  background:var(--accent2);
+  color:white;
+}
+
+section{
+  margin:45px 0;
+}
+
+h2{
+  font-size:28px;
+  margin-bottom:20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:18px;
+}
+
+.card{
+  background:var(--card);
+  border:1px solid #292934;
+  border-radius:18px;
+  padding:22px;
+}
+
+.card h3{
+  margin-top:8px;
+}
+
+.price{
+  font-size:21px;
+  font-weight:bold;
+  margin-top:15px;
+}
+
+.tag{
+  display:inline-block;
+  background:#292934;
+  color:#ddd;
+  padding:5px 10px;
+  border-radius:20px;
+  font-size:13px;
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+
+.step{
+  background:var(--card);
+  padding:20px;
+  border-radius:16px;
+}
+
+.cta{
+  background:linear-gradient(135deg,#171722,#241d43);
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+}
+
+footer{
+  padding:35px 0;
+  color:var(--muted);
+  text-align:center;
+  border-top:1px solid #292934;
+}
+
+@media(max-width:600px){
+  .hero h1{font-size:31px}
+  .wrap{padding:16px}
+}
+</style>
+</head>
+
 <body>
+
 <div class="wrap">
-<nav class="nav"><div class="brand">ARMEL <span>JOVIAL</span></div><div><a href="#services">Services</a><a href="#process">Comment ça marche</a><a href="#contact">Commander</a></div></nav>
-<header class="hero"><div class="eyebrow">Création digitale • 100% en ligne</div><h1>Des créations qui donnent vie à vos idées.</h1><p>Je réalise à distance des reproductions artistiques, portraits, retouches photo et créations digitales personnalisées, avec livraison du résultat directement en ligne.</p><a class="btn" href="mailto:ntepjovial@icloud.com?subject=Commande%20-%20Armel%20Jovial">Commander une création</a><a class="btn alt" href="#services">Voir les services</a></header>
-<section id="services"><h2>Mes services</h2><p class="lead">Choisissez une prestation, envoyez vos éléments et recevez votre création numérique en ligne.</p>
+
+<nav class="nav">
+  <div class="brand">ARMEL JOVIAL</div>
+
+  <a class="btn whatsapp"
+     href="https://wa.me/237694470975">
+     WhatsApp
+  </a>
+</nav>
+
+<header class="hero">
+
+  <span class="tag">SERVICES EN LIGNE</span>
+
+  <h1>Ntep Armel Jovial</h1>
+
+  <p>
+    Créations numériques, retouches photo,
+    montages et services artistiques personnalisés.
+  </p>
+
+  <a class="btn whatsapp"
+     href="https://wa.me/237694470975">
+     Commander sur WhatsApp
+  </a>
+
+  <a class="btn secondary" href="#services">
+     Voir mes services
+  </a>
+
+</header>
+
+<section id="services">
+
+<h2>Mes services</h2>
+
 <div class="grid">
-<article class="card"><span class="tag">ART DIGITAL</span><h3>Reproduction artistique</h3><p>Reproduction numérique d'une œuvre fournie par le client, dans le respect des droits d'utilisation applicables.</p><div class="price">à partir de 5 000 FCFA</div></article>
-<article class="card"><span class="tag">PORTRAIT</span><h3>Portrait personnalisé</h3><p>Transformation d'une photo en portrait artistique : élégant, cinématique, noir & blanc ou autre style demandé.</p><div class="price">à partir de 5 000 FCFA</div></article>
-<article class="card"><span class="tag">PHOTO</span><h3>Retouche & amélioration</h3><p>Nettoyage, amélioration de netteté, lumière, cadrage et corrections pour donner un rendu plus propre.</p><div class="price">à partir de 2 500 FCFA</div></article>
-<article class="card"><span class="tag">CRÉATION</span><h3>Visuel personnalisé</h3><p>Affiches, flyers, visuels réseaux sociaux, invitations numériques et autres compositions sur demande.</p><div class="price">à partir de 5 000 FCFA</div></article>
-<article class="card"><span class="tag">SOCIAL MEDIA</span><h3>Pack réseaux sociaux</h3><p>Création de plusieurs visuels cohérents pour Instagram, Facebook, TikTok ou WhatsApp Business.</p><div class="price">à partir de 10 000 FCFA</div></article>
-<article class="card"><span class="tag">SUR MESURE</span><h3>Projet personnalisé</h3><p>Une idée particulière ? Décris-moi ce que tu veux et je te proposerai une formule et un tarif avant de commencer.</p><div class="price">Sur devis</div></article>
-</div></section>
-<section id="process"><h2>Comment ça marche ?</h2><p class="lead">Aucun déplacement : tout se fait à distance.</p><div class="steps"><div class="step"><b>01</b><h3>Tu demandes</h3><p>Envoie ton idée et les photos/fichiers nécessaires.</p></div><div class="step"><b>02</b><h3>On confirme</h3><p>Je précise le rendu, le délai et le prix avant réalisation.</p></div><div class="step"><b>03</b><h3>Je crée</h3><p>Je réalise la prestation en ligne et je t'envoie un aperçu si nécessaire.</p></div><div class="step"><b>04</b><h3>Tu reçois</h3><p>Le fichier final est livré directement en ligne.</p></div></div></section>
-<section><div class="cta"><h2>Une idée en tête ?</h2><p class="lead">Explique-moi simplement ce que tu veux. Nous pouvons commencer par une demande personnalisée.</p><a class="btn" href="mailto:ntepjovial@icloud.com?subject=Demande%20de%20devis%20-%20Armel%20Jovial">Demander un devis</a></div></section>
-<section id="contact"><h2>Commander</h2><p class="lead">Pour commencer, écris-moi avec le service choisi, ton budget indicatif et les éléments à utiliser.</p><div class="contact"><div class="card"><h3>📧 E-mail</h3><p>ntepjovial@icloud.com</p><a class="btn" href="mailto:ntepjovial@icloud.com?subject=Commande%20-%20Armel%20Jovial">Écrire maintenant</a></div><div class="card"><h3>🌍 Service à distance</h3><p>Tout le travail est réalisé en ligne. Aucun déplacement ni livraison physique.</p><p class="note">Les délais et prix peuvent varier selon la complexité du projet.</p></div></div></section>
-<footer><div><strong>Ntep Armel Jovial</strong> — Créations digitales 100% en ligne</div><div class="note">© 2026 Armel Jovial. Les reproductions d'œuvres tierces doivent respecter les droits d'auteur et autorisations applicables.</div></footer>
-</div></body></html>
+
+<article class="card">
+<span class="tag">ART</span>
+<h3>Création artistique personnalisée</h3>
+<p>
+Transformation et création de visuels artistiques
+selon votre demande.
+</p>
+<div class="price">À partir de 5 000 FCFA</div>
+</article>
+
+<article class="card">
+<span class="tag">PHOTO</span>
+<h3>Retouche photo</h3>
+<p>
+Amélioration, nettoyage et retouche de vos photos.
+</p>
+<div class="price">À partir de 2 000 FCFA</div>
+</article>
+
+<article class="card">
+<span class="tag">MONTAGE</span>
+<h3>Montage photo</h3>
+<p>
+Création de montages personnalisés pour vos photos
+et souvenirs.
+</p>
+<div class="price">À partir de 3 000 FCFA</div>
+</article>
+
+<article class="card">
+<span class="tag">FLYER</span>
+<h3>Affiches et flyers</h3>
+<p>
+Création de visuels pour événements,
+commerces et réseaux sociaux.
+</p>
+<div class="price">À partir de 5 000 FCFA</div>
+</article>
+
+<article class="card">
+<span class="tag">CV</span>
+<h3>CV professionnel</h3>
+<p>
+Mise en forme et création d'un CV propre
+et professionnel.
+</p>
+<div class="price">À partir de 3 000 FCFA</div>
+</article>
+
+<article class="card">
+<span class="tag">SUR MESURE</span>
+<h3>Autres créations</h3>
+<p>
+Vous avez une idée particulière ?
+Expliquez-moi votre besoin.
+</p>
+<div class="price">Sur devis</div>
+</article>
+
+</div>
+</section>
+
+<section id="process">
+
+<h2>Comment ça marche ?</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>1. Vous demandez</h3>
+<p>
+Envoyez-moi votre idée ou votre photo
+sur WhatsApp.
+</p>
+</div>
+
+<div class="step">
+<h3>2. On confirme</h3>
+<p>
+Nous définissons ensemble le service,
+le prix et les détails.
+</p>
+</div>
+
+<div class="step">
+<h3>3. Je réalise</h3>
+<p>
+Je prépare votre création et vous la livre
+en ligne.
+</p>
+</div>
+
+</div>
+</section>
+
+<section>
+
+<div class="cta">
+
+<h2>Vous avez un projet ?</h2>
+
+<p>
+Envoyez-moi directement votre demande
+sur WhatsApp.
+</p>
+
+<a class="btn whatsapp"
+   href="https://wa.me/237694470975">
+   💬 Écrire sur WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<strong>Ntep Armel Jovial</strong>
+
+<br>
+
+Services numériques et créations personnalisées
+
+<br>
+
+WhatsApp : +237 694 470 975
+
+</footer>
+
+</div>
+
+</body>
+</html>
